@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
     android:layout_height="50dp"
     android:background="#161616"
     android:orientation="vertical">
@@ -18,7 +19,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="14dp"
                 android:textColor="#a7a7a7"
-                android:text="相机胶卷" />
+                android:text="@string/l_camera_row" />
 
             <TextView
                 android:id="@+id/photoCount"
@@ -26,7 +27,8 @@
                 android:textColor="#a7a7a7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(100)" />
+                android:text="(100)"
+                tools:ignore="HardcodedText"/>
     </LinearLayout>
 
     <View
