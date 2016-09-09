@@ -71,7 +71,8 @@ public class ImageSelectActivity extends FragmentActivity implements AlbumCollec
         mCollection.setOnSelectionChange(new SelectedUriCollection.OnSelectionChange() {
             @Override
             public void onChange(int maxCount, int selectCount) {
-                commit.setText("确定("+selectCount+"/"+maxCount+")");
+                commit.setText(getResources().getQuantityString(R.plurals.l_images_selected,
+                        selectCount, selectCount, maxCount));
             }
         });
 
@@ -85,11 +86,12 @@ public class ImageSelectActivity extends FragmentActivity implements AlbumCollec
         galleryTip = (ImageView) findViewById(R.id.gallery_tip);
         LinearLayout selectFold = (LinearLayout) findViewById(R.id.selectFold);
         commit = (Button) findViewById(R.id.commit);
-        commit.setText("确定(0/"+selectionSpec.getMaxSelectable()+")");
+        commit.setText(getResources().getQuantityString(R.plurals.l_images_selected,
+                0, 0, selectionSpec.getMaxSelectable()));
         if (selectionSpec.isSingleChoose()){
             commit.setVisibility(View.GONE);
         }
-        mFoldName.setText("最近图片");
+        mFoldName.setText(R.string.l_latest_pictures);
         selectFold.setOnClickListener(mOnClickFoldName);
 
         albumCollection.onCreate(ImageSelectActivity.this,this,selectionSpec,mListView);
@@ -101,7 +103,7 @@ public class ImageSelectActivity extends FragmentActivity implements AlbumCollec
             @Override
             public void onClick(View v) {
                 if (mCollection.isEmpty()) {
-                    Toast.makeText(getApplicationContext(),"未选择图片",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), R.string.l_no_image_selected,Toast.LENGTH_LONG).show();
                 }else{
                     setResult();
                 }

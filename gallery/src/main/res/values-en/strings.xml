@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">gallery</string>
-    <string name="action_settings">Settings</string>
     <string name="l_album_name_all">All</string>
     <string name="l_album_name_camera">Camera</string>
     <string name="l_album_name_download">Downloads</string>
@@ -9,4 +8,14 @@
     <string name="l_album_name_selected">Selected</string>
     <string name="l_confirm_dialog_message">Do you want to give up this image selection?</string>
     <string name="l_confirm_dialog_title">Done</string>
+    <string name="l_latest_pictures">Latest pictures</string>
+
+    <plurals name="l_images_selected">
+        <item quantity="zero">Selected (%d/%d)</item>
+        <item quantity="one">Selected (%d/%d)</item>
+        <item quantity="many">Selected (%d/%d)</item>
+    </plurals>
+    <string name="l_no_image_selected">No images selected</string>
+    <string name="l_camera_row">Camera row</string>
+    <string name="l_select">Select</string>
 </resources>
