@@ -14,9 +14,5 @@
     <string name="l_select">选择</string>
     <string name="l_camera_row">相机胶卷</string>
 
-    <plurals name="l_images_selected">
-        <item quantity="zero">确定 (%d/%d)</item>
-        <item quantity="one">确定 (%d/%d)</item>
-        <item quantity="many">确定 (%d/%d)</item>
-    </plurals>
+    <string name="l_images_selected">确定 (%1$d/%2$d)</string>
 </resources>

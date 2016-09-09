@@ -71,8 +71,7 @@ public class ImageSelectActivity extends FragmentActivity implements AlbumCollec
         mCollection.setOnSelectionChange(new SelectedUriCollection.OnSelectionChange() {
             @Override
             public void onChange(int maxCount, int selectCount) {
-                commit.setText(getResources().getQuantityString(R.plurals.l_images_selected,
-                        selectCount, selectCount, maxCount));
+                commit.setText(getResources().getString(R.string.l_images_selected, selectCount, maxCount));
             }
         });
 
@@ -86,8 +85,7 @@ public class ImageSelectActivity extends FragmentActivity implements AlbumCollec
         galleryTip = (ImageView) findViewById(R.id.gallery_tip);
         LinearLayout selectFold = (LinearLayout) findViewById(R.id.selectFold);
         commit = (Button) findViewById(R.id.commit);
-        commit.setText(getResources().getQuantityString(R.plurals.l_images_selected,
-                0, 0, selectionSpec.getMaxSelectable()));
+        commit.setText(getResources().getString(R.string.l_images_selected, 0, selectionSpec.getMaxSelectable()));
         if (selectionSpec.isSingleChoose()){
             commit.setVisibility(View.GONE);
         }
