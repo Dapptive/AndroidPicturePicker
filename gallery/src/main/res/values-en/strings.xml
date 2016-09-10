@@ -12,5 +12,5 @@
     <string name="l_camera_row">Camera row</string>
     <string name="l_select">Select</string>
 
-    <string name="l_images_selected">Selected (%1$d/%2$d)</string>
+    <string name="l_images_selected">Done (%1$d/%2$d)</string>
 </resources>
