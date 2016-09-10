@@ -1,6 +1,4 @@
 <resources>
-    <string name="app_name">gallery</string>
-
     <string name="l_album_name_all">最近图片</string>
     <string name="l_album_name_selected">选择图片</string>
     <string name="l_album_name_camera">相机</string>

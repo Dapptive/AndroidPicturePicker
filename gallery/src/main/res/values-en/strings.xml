@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">gallery</string>
     <string name="l_album_name_all">All</string>
     <string name="l_album_name_camera">Camera</string>
     <string name="l_album_name_download">Downloads</string>
