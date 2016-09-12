@@ -78,7 +78,7 @@ public class MainActivity extends FragmentActivity {
                 //.setEngine(new ImageLoaderEngine())
                 //.setEngine(new CustomEngine())
                 .forResult(REQUEST_CODE_CHOOSE);
-    };
+    }
 
     static class CustomEngine implements LoadEngine {
         @Override
