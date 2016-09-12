@@ -19,6 +19,7 @@ import android.graphics.BitmapFactory.Options;
 import android.net.Uri;
 import android.os.Environment;
 import android.os.Handler;
+import android.provider.MediaStore;
 import android.provider.MediaStore.Images.Media;
 import android.provider.MediaStore.Images.Thumbnails;
 import android.util.Log;
@@ -70,8 +71,9 @@ public class MediaStoreCompat {
             } else {
                 Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
                 intent.addCategory("android.intent.category.DEFAULT");
-                intent.putExtra("output", Uri.fromFile(toSave));
-                intent.putExtra("android.intent.extra.videoQuality", 1);
+                intent.putExtra(MediaStore.EXTRA_OUTPUT, Uri.fromFile(toSave));
+                intent.putExtra(MediaStore.EXTRA_FULL_SCREEN, 1);
+                intent.putExtra(MediaStore.EXTRA_MEDIA_FOCUS, 1);
                 activity.startActivityForResult(intent, requestCode);
                 return toSave.toString();
             }
