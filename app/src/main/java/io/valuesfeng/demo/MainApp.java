@@ -18,7 +18,6 @@ public class MainApp extends Application {
     public void onCreate() {
         super.onCreate();
 
-
         DisplayImageOptions userOptions = new DisplayImageOptions.Builder()
                 .cacheInMemory(true).cacheOnDisk(true).
                         showImageForEmptyUri(R.drawable.image_not_exist).
