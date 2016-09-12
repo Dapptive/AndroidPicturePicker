@@ -63,9 +63,9 @@ public class MainActivity extends FragmentActivity {
             ActivityCompat.requestPermissions(this,
                     new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE},
                     CAMERA_PERMISSION);
+        } else {
+            startImagePickerIntent();
         }
-
-        startImagePickerIntent();
     }
 
     public void startImagePickerIntent() {
