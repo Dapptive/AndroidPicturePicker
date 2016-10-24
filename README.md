@@ -100,7 +100,7 @@ Gradle
   
   
   dependencies {
-		compile 'com.github.valuesfeng:androidpicturepicker:1.0.0'
+		compile 'com.github.dapptive:androidpicturepicker:1.1.8'
 	}  
 ```
 
