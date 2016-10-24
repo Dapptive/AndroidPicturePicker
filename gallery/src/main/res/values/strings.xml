@@ -1,16 +1,15 @@
 <resources>
-    <string name="l_album_name_all">最近图片</string>
-    <string name="l_album_name_selected">选择图片</string>
-    <string name="l_album_name_camera">相机</string>
-    <string name="l_album_name_download">下载</string>
-    <string name="l_album_name_screen_shot">屏幕截图</string>
+    <string name="l_album_name_all">All</string>
+    <string name="l_album_name_camera">Camera</string>
+    <string name="l_album_name_download">Downloads</string>
+    <string name="l_album_name_screen_shot">Screenshot</string>
+    <string name="l_album_name_selected">Selected</string>
+    <string name="l_confirm_dialog_message">Do you want to give up this image selection?</string>
+    <string name="l_confirm_dialog_title">Done</string>
+    <string name="l_latest_pictures">Latest pictures</string>
+    <string name="l_no_image_selected">No images selected</string>
+    <string name="l_camera_row">Camera row</string>
+    <string name="l_select">Select</string>
 
-    <string name="l_confirm_dialog_title">提示</string>
-    <string name="l_confirm_dialog_message">您确定要放弃本次选择的图片吗?</string>
-    <string name="l_latest_pictures">最近图片</string>
-    <string name="l_no_image_selected">未选择图片</string>
-    <string name="l_select">选择</string>
-    <string name="l_camera_row">相机胶卷</string>
-
-    <string name="l_images_selected">确定 (%1$d/%2$d)</string>
+    <string name="l_images_selected">Done (%1$d/%2$d)</string>
 </resources>
